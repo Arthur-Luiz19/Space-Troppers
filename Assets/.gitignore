@@ -1,0 +1,17 @@
+assets_jogo_de_navinha_2D-main/
+Scenes/
+Prefabs/
+Animation/
+Spaceship-shooter-gamekit/
+Sprites/
+.vscode/
+Assembly-CSharp.csproj
+Library/
+Logs/
+Packages/
+ProjectSettings/
+Space Troopers.sln
+Space-Troopers.sln
+Temp/
+UserSettings/
+extensions.json
