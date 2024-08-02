@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
 
     public void AtirarLaser(){
 
-        if(Input.GetButtonDown("Fire1")){
+        if(CrossPlatformInputManager.GetButtonDown("Fire1")){
 
             SoundManager.Instance.somLaserPlayer.Play();
             
