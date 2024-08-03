@@ -8,16 +8,19 @@ public class PainelGameOver : MonoBehaviour
     public void Reiniciar(){
 
         SortearFase();
+        SoundManager.Instance.somLaserPlayer.Play();
     }
 
     public void VoltarInicio(){
 
         SceneManager.LoadScene("Menu");
+        SoundManager.Instance.somLaserPlayer.Play();
     }
 
     public void Sair(){
 
         Application.Quit();
+        SoundManager.Instance.somLaserPlayer.Play();
         Debug.Log("Saiu");
     }
 

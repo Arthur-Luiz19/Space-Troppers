@@ -63,12 +63,12 @@ public class PlayerController : MonoBehaviour
             Movimentos();
             TocarMovimentos();
             AtirarLaser();
+            MovimentosInputMobile(touchRun);
         }    
     }
 
     void FixedUpdate(){
 
-        MovimentosInputMobile(touchRun);
     }
 
     void Movimentos(){
@@ -98,11 +98,11 @@ public class PlayerController : MonoBehaviour
 
     void TocarMovimentos(){
 
-        if(teclasApertadas.x == 0 || touchRun.x == 0){
+        if(touchRun.x == 0){
 
             PA.SetTrigger("Idle");
         }
-        else if (teclasApertadas.x != 0 || touchRun.x != 0){
+        else if (touchRun.x != 0){
 
             PA.SetTrigger("isWalk");
         }

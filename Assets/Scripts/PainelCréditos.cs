@@ -8,16 +8,19 @@ public class PainelCréditos : MonoBehaviour
     void Start()
     {
         painelCreditos.SetActive(false);
+        SoundManager.Instance.musicaFundo.Play();
     }
 
     public void MenuCreditos(){
 
         painelCreditos.SetActive(true);
+        SoundManager.Instance.somLaserPlayer.Play();
     }
 
     public void FecharCreditos(){
 
         painelCreditos.SetActive(false);
+        SoundManager.Instance.somLaserPlayer.Play();
     }
 
     

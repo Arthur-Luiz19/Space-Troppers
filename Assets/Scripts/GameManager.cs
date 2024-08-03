@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     public TMP_Text highScore;
     public AudioSource musicaFundo;
     public AudioSource musicaGameOver;
+
+    [Header("Pontuação Pausa")]
+    public  GameObject  painelPausa, botaoUm, botaoDois;
+    public  TMP_Text    txtPontuaçãoPausa;
     
     void Awake(){
 
@@ -32,6 +36,10 @@ public class GameManager : MonoBehaviour
 
         txtPontuacao.text = "Score: " + Pontuacao;
         painelGameOver.SetActive(false);
+
+        painelPausa.SetActive(false);
+        botaoUm.SetActive(true);
+        botaoDois.SetActive(false);
     }
 
     
@@ -61,5 +69,25 @@ public class GameManager : MonoBehaviour
         }
 
         highScore.text = "HighScore: " + PlayerPrefs.GetInt("HighScore");
+    }
+
+    public void PusarJogo(){
+
+        painelPausa.SetActive(true);
+        botaoUm.SetActive(false);
+        botaoDois.SetActive(true);
+        Time.timeScale = 0;
+        SoundManager.Instance.musicaFundo.Pause();
+        txtPontuaçãoPausa.text = "Pontuação: " + Pontuacao; 
+    }
+    public void ContinuarJogo(){
+
+        Time.timeScale = 1;
+        painelPausa.SetActive(false);
+        botaoUm.SetActive(true);
+        botaoDois.SetActive(false);
+        SoundManager.Instance.somLaserPlayer.Play();
+        SoundManager.Instance.musicaFundo.UnPause();
+        
     }
 }
