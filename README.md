@@ -1,5 +1,5 @@
 # Space-Troppers
-Lind for Download: https://arthurals.itch.io/space-troopers
+Link for Download: https://arthurals.itch.io/space-troopers
 
 # Hello!!
 
