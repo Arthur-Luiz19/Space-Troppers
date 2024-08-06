@@ -3,7 +3,7 @@ Link for Download: https://arthurals.itch.io/space-troopers
 
 # Hello!!
 
-this is my third Unity Project, i just finished by developer this space-Shooter game, than i'm glad and tired so much ksksk.
+This is my third Unity Project, i just finished by developer this space-Shooter game, than i'm glad and tired so much ksksk.
 For this game, i'm inspired on 80s/90s arcade games and i took some weeks til finish it.
 
 # How to play
